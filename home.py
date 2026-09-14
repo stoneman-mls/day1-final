@@ -1,6 +1,9 @@
 ## these are libraries that are being imported
 import streamlit as st
 from openai import OpenAI
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # this is the title of the webpage
 st.title("LAWS90286")
@@ -16,9 +19,11 @@ if st.button("Say hi"):
 
 client = OpenAI()
 
-response = client.responses.create(
-    model="gpt-4o",
-    input="Write a one-sentence bedtime story about a unicorn.",
-)
+if name is not None and name != "":
+    
+    response = client.responses.create(
+        model="gpt-4o",
+        input=f"Write a poem about {name}.",
+    )
 
-st.write(response.output_text)
+    st.write(response.output_text)
