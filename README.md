@@ -21,3 +21,9 @@
 2. Click to "stage all changes"
 3. Enter a commit message
 4. Click commit
+5. Sync changes
+
+## To add things that are private that don't go to GitHub
+1. Create .env file
+2. Add secrets to the .env file
+3. Access those secrets in code
