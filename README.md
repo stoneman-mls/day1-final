@@ -19,3 +19,5 @@
 
 1. Navigate to source control on LHS of screen
 2. Click to "stage all changes"
+3. Enter a commit message
+4. Click commit
