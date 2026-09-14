@@ -1,1 +1,21 @@
 # day1-final
+
+## SETUP
+1. create virtual environment
+> python -m venv .venv
+2. activate virtual environment
+> source .venv/bin/activate
+3. install streamlit
+> pip install streamlit
+4. create a python file
+> touch home.py
+5. run streamlit, using the python file from step 4 as the entry point
+> streamlit run home.py
+6. edit the python file to add functionality
+> import streamlit as st
+> st.title("LAWS90286")
+
+## To save code to GitHub
+
+1. Navigate to source control on LHS of screen
+2. Click to "stage all changes"
